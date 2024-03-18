@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumenty - MŠ Kostomlaty nad Labem</title>
+    <link rel="icon" type="image/png" sizes="any" href="images/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        #main-right a {
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+    <div id="header-content" class="shrink">
+        <a id="header-homepage-button" href="index.html"><div id="header-main"><div><h1>Mateřská škola</h1><h2>Kostomlaty nad Labem</h2></div></div></a>
+        <div id="header-secondary"><div><p><q>Lidská osobnost, ne výchovná metoda, musí být brána v úvahu.</q> <cite>Maria Montessori</cite></p></div></div>
+    </div>
+    </header>
+
+    <div id="navigation">
+        <div id="navigation-menu">
+            <div class="menu-item">
+                <div class="menu-item-main"><a href="o-skole.html"><span>O škole</span></a></div>
+                <div class="menu-item-dropdown">
+                    <div class="dropdown-item"><a href="obecne.html"><span>Obecné informace</span></a></div>
+                    <div class="dropdown-item"><a href="specificke.html"><span>Specifické informace</span></a></div>
+                    <div class="dropdown-item"><a href="tridy.html"><span>Třídy</span></a></div>
+                    <div class="dropdown-item"><a href="kontakty.html"><span>Kontakty</span></a></div>
+                    <div class="dropdown-item"><a href="projekty.html"><span>Projekty</span></a></div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-main"><a href="pro-rodice.html"><span>Pro rodiče</span></a></div>
+                <div class="menu-item-dropdown">
+                    <div class="dropdown-item"><a href="organizace.html"><span>Organizace školního roku</span></a></div>
+                    <div class="dropdown-item"><a href="akce.html"><span>Akce</span></a></div>
+                    <div class="dropdown-item"><a href="platby.html"><span>Platby</span></a></div>
+                    <div class="dropdown-item"><a href="krouzky.html"><span>Kroužky</span></a></div>
+                    <div class="dropdown-item"><a href="dokumentytisk.html"><span>Dokumenty k tisku</span></a></div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-main"><a href="fotogalerie.html"><span>Fotogalerie</span></a></div>
+                <div class="menu-item-dropdown">
+                    <div class="dropdown-item"><a href="cervena.html"><span>Červená třída</span></a></div>
+                    <div class="dropdown-item"><a href="zelena.html"><span>Zelená třída</span></a></div>
+                    <div class="dropdown-item"><a href="zluta.html"><span>Žlutá třída</span></a></div>
+                    <div class="dropdown-item"><a href="modra.html"><span>Modrá třída</span></a></div>
+                    <div class="dropdown-item"><a href="archiv.html"><span>Archiv</span></a></div>
+                </div>
+            </div>
+            <div class="menu-item-static">
+                <div class="menu-item-main" id="navigation-current"><a href="dokumenty.html"><span>Dokumenty</span></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="slideshow">
+        <div class="slideshow-slide"><img src="images/image1.jpg" alt="Slide 1"></div>
+        <div class="slideshow-slide"><img src="images/image2.jpg" alt="Slide 2"></div>
+        <div class="slideshow-slide"><img src="images/image3.jpg" alt="Slide 3"></div>
+        <div class="slideshow-slide"><img src="images/image4.jpg" alt="Slide 4"></div>
+        <div class="slideshow-slide"><img src="images/image5.jpg" alt="Slide 5"></div>
+        <div class="slideshow-slide"><img src="images/image6.jpg" alt="Slide 6"></div>
+        <div class="slideshow-slide"><img src="images/image7.jpg" alt="Slide 7"></div>
+        <div class="slideshow-slide"><img src="images/image8.jpg" alt="Slide 8"></div>
+        <div class="slideshow-slide"><img src="images/image9.jpg" alt="Slide 9"></div>
+        <div class="slideshow-slide"><img src="images/image10.jpg" alt="Slide 10"></div>
+    </div>
+    <div id="dots-slideshow">
+        <span class="dot-slideshow" onclick="currentSlide(1)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(2)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(3)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(4)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(5)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(6)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(7)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(8)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(9)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(10)"></span>
+    </div>
+    <script>
+        document.getElementById("slideshow").style.display = "block";
+        document.getElementById("dots-slideshow").style.display = "block";
+    </script>
+
+    <div id="main" class="shrink">
+        <div id="main-left">
+            <div id="main-left-navigation-super"><h3>Dokumenty</h3></div>
+            <div id="calendar-container">
+                <div id="calendar"></div>
+            </div>
+            <script>document.getElementById("calendar-container").style.display = "flex";</script>
+            <div class="main-left-navigation"><a href="aktuality.html"><span>Aktuality</span></a></div>
+            <div class="main-left-navigation"><a href="prohlaseni.html"><span>Prohlášení o přístupnosti</span></a></div>
+            <div class="main-left-navigation"><a href="mapawebu.html"><span>Mapa webu</span></a></div>
+        </div>
+        <div id="main-right">
+            <div id="main-right-super"><h3>Dokumenty</h3></div>
+            <div id="main-right-content">
+                <a href="https://drive.google.com/file/d/1UaiWPsq7B3Oeur8_oafrXFAfQM-sbNBm/view">školní řád</a>
+                <a href="https://drive.google.com/file/d/1IXemRUr0w9qezj4AujztkEf_F5GyRoFS/view">švp</a>
+                <a href="https://www.mskostomlatynl.cz/p/gdpr.html">gdpr</a>
+                <a href="https://drive.google.com/file/d/1Z8ArcIyjyKZH7sYtbCe_5iw9JH3J1vuY/view">rozpocty</a>
+                <a href="https://www.mskostomlatynl.cz/p/zpravy-csi.html">zpravy čši</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="partners" class="shrink">
+        <div id="partners-heading"><h2>Partneři</h2></div>
+        <div id="partners-content">
+            <div class="partners-content-row">
+                <img src="images/partner1.jpg" id="partner1" alt="Partner 1">
+                <img src="images/partner2.png" id="partner2" alt="Partner 2">
+            </div>
+            <div class="partners-content-row">
+                <img src="images/partner3.png" id="partner3" alt="Partner 3">
+                <img src="images/partner4.png" id="partner4" alt="Partner 4">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    <div id="footer-content" class="shrink">
+        <div class="footer-div" id="f-d">
+            <div id="f-i"><h2>Adresa</h2><p>Mateřská škola Kostomlaty nad Labem</p><p>Školní 370</p><p>28921 Kostomlaty nad Labem</p></div>
+            <div id="f-ii"><h2>Kontakt školy</h2><p>Ředitelka: Bc.Eva Sochová</p><p>ms.kostomlatynl@&#8203;gmail.com</p><p>721 437 118</p><p>Datová schránka: fggktbc</p></div>
+            <div id="f-iii"><h2>Kontakt na třídy</h2><p>Červená: 604 140 965</p><p>Zelená: 605 555 171</p><p>Žlutá: 604 140 046</p><p>Modrá: 736 529 995</p></div>
+            <div id="f-iiii"><h2>Jídelna</h2><p>Vedoucí: Martina Skořepová</p><p>736 754 898</p><a href="https://www.jidelna.cz/jidelni-listek/?jidelna=1318"><p>www.jidelna.cz</p></a></div>
+        </div>
+        <div class="footer-div" id="ff-d">
+            <div class="footer-empty"></div>
+            <div id="ff-ii"><h2>Kontakt školy</h2><p>Ředitelka: Bc.Eva Sochová</p><p>ms.kostomlatynl@&#8203;gmail.com</p><p>721 437 118</p><p>Datová schránka: fggktbc</p></div>
+            <div id="ff-iii"><h2>Kontakt na třídy</h2><p>Červená: 604 140 965</p><p>Zelená: 605 555 171</p><p>Žlutá: 604 140 046</p><p>Modrá: 736 529 995</p></div>
+            <div id="ff-iiii"><h2>Jídelna</h2><p>Vedoucí: Martina Skořepová</p><p>736 754 898</p><a href="https://www.jidelna.cz/jidelni-listek/?jidelna=1318"><p>www.jidelna.cz</p></a></div>
+            <div class="footer-empty"></div>
+        </div>
+        <div class="footer-div" id="fff-d">
+            <div id="fff-iii"><h2>Kontakt na třídy</h2><p>Červená: 604 140 965</p><p>Zelená: 605 555 171</p><p>Žlutá: 604 140 046</p><p>Modrá: 736 529 995</p></div>
+        </div>
+        <div class="footer-div" id="ffff-d">
+            <div id="ffff-iiii"><h2>Jídelna</h2><p>Vedoucí: Martina Skořepová</p><p>736 754 898</p><a href="https://www.jidelna.cz/jidelni-listek/?jidelna=1318"><p>www.jidelna.cz</p></a></div>
+        </div>
+    </div>
+    </footer>
+
+</body>
+</html>

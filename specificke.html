@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specifické informace - MŠ Kostomlaty nad Labem</title>
+    <link rel="icon" type="image/png" sizes="any" href="images/icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        #main-right a {
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+    <div id="header-content" class="shrink">
+        <a id="header-homepage-button" href="index.html"><div id="header-main"><div><h1>Mateřská škola</h1><h2>Kostomlaty nad Labem</h2></div></div></a>
+        <div id="header-secondary"><div><p><q>Lidská osobnost, ne výchovná metoda, musí být brána v úvahu.</q> <cite>Maria Montessori</cite></p></div></div>
+    </div>
+    </header>
+
+    <div id="navigation">
+        <div id="navigation-menu">
+            <div class="menu-item">
+                <div class="menu-item-main" id="navigation-current"><a href="o-skole.html"><span>O škole</span></a></div>
+                <div class="menu-item-dropdown">
+                    <div class="dropdown-item"><a href="obecne.html"><span>Obecné informace</span></a></div>
+                    <div class="dropdown-item"><a href="specificke.html"><span>Specifické informace</span></a></div>
+                    <div class="dropdown-item"><a href="tridy.html"><span>Třídy</span></a></div>
+                    <div class="dropdown-item"><a href="kontakty.html"><span>Kontakty</span></a></div>
+                    <div class="dropdown-item"><a href="projekty.html"><span>Projekty</span></a></div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-main"><a href="pro-rodice.html"><span>Pro rodiče</span></a></div>
+                <div class="menu-item-dropdown">
+                    <div class="dropdown-item"><a href="organizace.html"><span>Organizace školního roku</span></a></div>
+                    <div class="dropdown-item"><a href="akce.html"><span>Akce</span></a></div>
+                    <div class="dropdown-item"><a href="platby.html"><span>Platby</span></a></div>
+                    <div class="dropdown-item"><a href="krouzky.html"><span>Kroužky</span></a></div>
+                    <div class="dropdown-item"><a href="dokumentytisk.html"><span>Dokumenty k tisku</span></a></div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-main"><a href="fotogalerie.html"><span>Fotogalerie</span></a></div>
+                <div class="menu-item-dropdown">
+                    <div class="dropdown-item"><a href="cervena.html"><span>Červená třída</span></a></div>
+                    <div class="dropdown-item"><a href="zelena.html"><span>Zelená třída</span></a></div>
+                    <div class="dropdown-item"><a href="zluta.html"><span>Žlutá třída</span></a></div>
+                    <div class="dropdown-item"><a href="modra.html"><span>Modrá třída</span></a></div>
+                    <div class="dropdown-item"><a href="archiv.html"><span>Archiv</span></a></div>
+                </div>
+            </div>
+            <div class="menu-item-static">
+                <div class="menu-item-main"><a href="dokumenty.html"><span>Dokumenty</span></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="slideshow">
+        <div class="slideshow-slide"><img src="images/image1.jpg" alt="Slide 1"></div>
+        <div class="slideshow-slide"><img src="images/image2.jpg" alt="Slide 2"></div>
+        <div class="slideshow-slide"><img src="images/image3.jpg" alt="Slide 3"></div>
+        <div class="slideshow-slide"><img src="images/image4.jpg" alt="Slide 4"></div>
+        <div class="slideshow-slide"><img src="images/image5.jpg" alt="Slide 5"></div>
+        <div class="slideshow-slide"><img src="images/image6.jpg" alt="Slide 6"></div>
+        <div class="slideshow-slide"><img src="images/image7.jpg" alt="Slide 7"></div>
+        <div class="slideshow-slide"><img src="images/image8.jpg" alt="Slide 8"></div>
+        <div class="slideshow-slide"><img src="images/image9.jpg" alt="Slide 9"></div>
+        <div class="slideshow-slide"><img src="images/image10.jpg" alt="Slide 10"></div>
+    </div>
+    <div id="dots-slideshow">
+        <span class="dot-slideshow" onclick="currentSlide(1)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(2)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(3)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(4)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(5)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(6)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(7)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(8)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(9)"></span>
+        <span class="dot-slideshow" onclick="currentSlide(10)"></span>
+    </div>
+    <script>
+        document.getElementById("slideshow").style.display = "block";
+        document.getElementById("dots-slideshow").style.display = "block";
+    </script>
+
+    <div id="main" class="shrink">
+        <div id="main-left">
+            <div id="main-left-navigation-super"><h3>O škole</h3></div>
+            <div class="main-left-navigation"><a href="obecne.html"><span>Obecné informace</span></a></div>
+            <div class="main-left-navigation" id="navig-current"><a href="specificke.html"><span>Specifické informace</span></a></div>
+            <div class="main-left-navigation"><a href="tridy.html"><span>Třídy</span></a></div>
+            <div class="main-left-navigation"><a href="kontakty.html"><span>Kontakty</span></a></div>
+            <div class="main-left-navigation"><a href="projekty.html"><span>Projekty</span></a></div>
+            <div id="calendar-container">
+                <div id="calendar"></div>
+            </div>
+            <script>document.getElementById("calendar-container").style.display = "flex";</script>
+            <div class="main-left-navigation"><a href="aktuality.html"><span>Aktuality</span></a></div>
+            <div class="main-left-navigation"><a href="prohlaseni.html"><span>Prohlášení o přístupnosti</span></a></div>
+            <div class="main-left-navigation"><a href="mapawebu.html"><span>Mapa webu</span></a></div>
+        </div>
+        <div id="main-right">
+            <div id="main-right-super"><h3>Specifické informace</h3></div>
+            <div id="main-right-content">
+                <h2 class="centered">Co si přinést do školy</h2>
+                <p>Oblečení na pobyt ve třídě a tělocvičně:</p>
+                <ul>
+                    <li>Pohodlná a bezpečná obuv s pevnou patou (bačkory)</li>
+                    <li>Cvičky s bílou podrážkou</li>
+                    <li>Pyžamo</li>
+                </ul>
+                <p>Oblečení na pobyt venku:</p>
+                <ul>
+                    <li>Tepláky</li>
+                    <li>Kraťasy</li>
+                    <li>Mikina</li>
+                    <li>Bunda</li>
+                    <li>Pokrývka hlavy</li>
+                    <li>Pláštěnka</li>
+                </ul>
+                <p>Náhradní oblečení:</p>
+                <ul>
+                    <li>Spodní prádlo</li>
+                    <li>Ponožky</li>
+                    <li>Tričko</li>
+                    <li>Tepláky</li>
+                </ul>
+                <p>Věci pro pobyt ve školce:</p>
+                <ul>
+                    <li>Hrneček na pitný režim</li>
+                    <li>Zubní pasta a kartáček</li>
+                </ul>
+                <h2 class="centered">Adaptační plán</h2>
+                    <p>Adaptace je náročná nejenom pro dítě, ale také pro rodiče, děti Vaše emoce vycítí a reagují na ně, proto vystupujte přívětivě, ale rozhodně.</p>
+                    <p>V MŠ dodržujte pravidla společně s dítětem. K sezení využívejte koberec.</p>
+                <h3>První den ve školce</h3>
+                    <p>Pokud je to možné, mělo by dítě svůj první den v MŠ projít se svým rodičem. Seznamte dítě s prostory MŠ. Uložte podepsaný hrneček na tác umístěný u vstupu u kuchyně. Společně s dítětem najdete židličku, na které bude sedět při jídle.</p>
+                    <p>V umývárně je třeba vyzkoušet velikost toalety, pokud je toaleta pro dítě moc vysoko, upozorněte na to prosím učitelky. Nechte dítě vyzkoušet pustit vodu a vypnout ji a najít ručník</p>
+                <h3>Zbytek týdne</h3>
+                    <p>Do MŠ můžete vstupovat s dítětem, odcházejte prosím nejdéle v 8:30 hod. (vždy než odejdete, informujte učitelku). Dítě v MŠ doporučujeme ponechávat maximálně dvě hodiny.</p>
+                <h3>Další dny</h3>
+                    <p>V průběhu září můžete vstupovat do MŠ a zůstávat do 8:30 hod., od října děti vstupují do třídy bez rodičů. Dobu pobytu prodlužujte postupně po hodině, pak do oběda. Dobu pobytu nikdy nenavyšujeme po víkendu nebo po vynechaném dni.</p>
+                <h2 class="centered">Pravidla pro návštěvy</h2>
+                    <p>Práce dětí i pedagogů v naší školce v systému Začít spolu s Montessori prvky je specifická. Aby mohla probíhat tak, jak jsou děti zvyklé, prosíme vás o dodržování následujících pravidel.</p>
+                    <ul>
+                        <li>Protože se děti pohybují volně v prostoru, sedněte si na židli pro dospělé nebo na zem.</li>
+                        <li>Pokud vás bude ve třídě více dospělých, omezte rozhovory mezi sebou ve chvíli, kdy probíhá činnost.</li>
+                        <li>Děti během pobytu ve škole nekontaktujte. Pokud Vás dítě osloví, odpovězte mu, avšak ani na jeho výzvu nevstupujte do jeho práce.</li>
+                        <li>Pomůcky a hračky se Vám jistě budou líbit, avšak během pobytu ve školce s dětmi je neberte do rukou,ani s nimi nepracujte.</li>
+                        <li>Osobní věci dětí, jako jsou zásuvky, portfolia nebo rozdělaná práce, bez svolení dětí neprohlížejte.</li>
+                        <li>Během pobytu ve školce děti nefotografujte.</li>
+                        <li>Pokud se rozhodnete opustit třídu a poté se do ní vrátit, učiňte tak co nejvíce potichu a nenápadně.</li>
+                    </ul>
+                <h2 class="centered">Desatero předškoláka</h2>
+                <p><small>Materiál pro PV, č.j.MSMT-9482/2012-22</small></p>
+                <p>V rámci příprav materiálu Konkretizované očekávané výstupy RVP PV vzešel, na základě četných dotazů rodičů, také návrh materiálu popisující základní požadavky pro děti předškolního věku, který by mohli využít rodiče.</p>
+                <p>Vstup do první třídy základní školy představuje pro dítě velkou životní změnu. Mění se role dítěte, prostředí, dospělí i vrstevníci, denní program, náplň činnosti, nároky i požadavky.</p>
+                <p>Aby dítě mohlo zvládnout tuto náročnou situaci bez vážnějších problémů, mělo by být nejen dostatečně vývojové a sociálně zralé, ale také dobře připravené. Materiál nabízí rodičům dětí předškolního věku základní informace toho, co by mělo jejich dítě zvládnout před vstupem do základní školy. Jsou zde zachyceny jak výchovné, tak vzdělávací předpoklady. Je třeba mít ale na zřeteli, že zrání dítěte je nerovnoměrné, že každé dítě nemusí všech parametrů dosáhnout, ale může se k nim přiblížit. Přehled základních dovedností propojuje a sjednocuje cíle rodiny a školy.</p>
+                <p>Proto je velmi důležitá spolupráce rodiny a školy, která se podílí na vzdělávání dítěte.</p>
+                <h3>Desatero předškoláka</h3>
+                <p>Desatero předškoláka naleznete pod následujícím odkazem: <a href="https://drive.google.com/file/d/1x4-gma-ZdpegllxoFjn9C9j_7FONXHNW/view?usp=sharing">Desatero předškoláka</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="partners" class="shrink">
+        <div id="partners-heading"><h2>Partneři</h2></div>
+        <div id="partners-content">
+            <div class="partners-content-row">
+                <img src="images/partner1.jpg" id="partner1" alt="Partner 1">
+                <img src="images/partner2.png" id="partner2" alt="Partner 2">
+            </div>
+            <div class="partners-content-row">
+                <img src="images/partner3.png" id="partner3" alt="Partner 3">
+                <img src="images/partner4.png" id="partner4" alt="Partner 4">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    <div id="footer-content" class="shrink">
+        <div class="footer-div" id="f-d">
+            <div id="f-i"><h2>Adresa</h2><p>Mateřská škola Kostomlaty nad Labem</p><p>Školní 370</p><p>28921 Kostomlaty nad Labem</p></div>
+            <div id="f-ii"><h2>Kontakt školy</h2><p>Ředitelka: Bc.Eva Sochová</p><p>ms.kostomlatynl@&#8203;gmail.com</p><p>721 437 118</p><p>Datová schránka: fggktbc</p></div>
+            <div id="f-iii"><h2>Kontakt na třídy</h2><p>Červená: 604 140 965</p><p>Zelená: 605 555 171</p><p>Žlutá: 604 140 046</p><p>Modrá: 736 529 995</p></div>
+            <div id="f-iiii"><h2>Jídelna</h2><p>Vedoucí: Martina Skořepová</p><p>736 754 898</p><a href="https://www.jidelna.cz/jidelni-listek/?jidelna=1318"><p>www.jidelna.cz</p></a></div>
+        </div>
+        <div class="footer-div" id="ff-d">
+            <div class="footer-empty"></div>
+            <div id="ff-ii"><h2>Kontakt školy</h2><p>Ředitelka: Bc.Eva Sochová</p><p>ms.kostomlatynl@&#8203;gmail.com</p><p>721 437 118</p><p>Datová schránka: fggktbc</p></div>
+            <div id="ff-iii"><h2>Kontakt na třídy</h2><p>Červená: 604 140 965</p><p>Zelená: 605 555 171</p><p>Žlutá: 604 140 046</p><p>Modrá: 736 529 995</p></div>
+            <div id="ff-iiii"><h2>Jídelna</h2><p>Vedoucí: Martina Skořepová</p><p>736 754 898</p><a href="https://www.jidelna.cz/jidelni-listek/?jidelna=1318"><p>www.jidelna.cz</p></a></div>
+            <div class="footer-empty"></div>
+        </div>
+        <div class="footer-div" id="fff-d">
+            <div id="fff-iii"><h2>Kontakt na třídy</h2><p>Červená: 604 140 965</p><p>Zelená: 605 555 171</p><p>Žlutá: 604 140 046</p><p>Modrá: 736 529 995</p></div>
+        </div>
+        <div class="footer-div" id="ffff-d">
+            <div id="ffff-iiii"><h2>Jídelna</h2><p>Vedoucí: Martina Skořepová</p><p>736 754 898</p><a href="https://www.jidelna.cz/jidelni-listek/?jidelna=1318"><p>www.jidelna.cz</p></a></div>
+        </div>
+    </div>
+    </footer>
+
+</body>
+</html>

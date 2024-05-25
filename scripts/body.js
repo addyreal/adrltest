@@ -45,7 +45,8 @@ function handleMobNav() {
     var nav = document.querySelector('header>nav');
 
     //var navVisible = window.getComputedStyle(nav).display !== 'none';
-    var navVisible = window.getComputedStyle(nav).right == '0px';
+    var navVisible = nav.style.transform !== 'translateX(100%)';
+    //on screen
 
     const topLine = document.querySelector('header>button span:nth-child(1)');
     const middleLine = document.querySelector('header>button span:nth-child(2)');
@@ -59,7 +60,7 @@ function handleMobNav() {
         bottomLine.style.transform = 'translate(0, -13px) rotate(-45deg)';
       }, 200);
       //nav.style.display = 'flex';
-      nav.style.right = '0';
+      nav.style.transform = 'translateX(0)';
       nav.style.opacity = '1';
     }
     else {
@@ -72,7 +73,7 @@ function handleMobNav() {
       }, 200);
       closeAllDropdowns();
       //nav.style.display = 'none';
-      nav.style.right = '-' + window.getComputedStyle(nav).width;
+      nav.style.transform = 'translateX(100%)';
       nav.style.opacity = '0';
   }
   this.setAttribute('aria-expanded', navVisible ? 'false' : 'true');
@@ -90,8 +91,10 @@ function pingResize() {
       closeAllDropdowns();
 
       //document.querySelector('header>nav').style.display = 'none';
-      document.querySelector('header>nav').style.right = '-' + window.getComputedStyle(document.querySelector('header>nav')).width;
+      document.querySelector('header>nav').style.transition = 'width 0.3s ease, opacity 0.3s ease';
+      document.querySelector('header>nav').style.transform = 'translateX(100%)';
       document.querySelector('header>nav').style.opacity = '0';
+      document.querySelector('header>nav').style.transition = 'width 0.3s ease, opacity 0.3s ease, transform 0.3s ease';
 
       document.querySelector('header>button').setAttribute('aria-expanded', 'false');
     } else if (viewportWidth > 1050 && ping) {
@@ -100,10 +103,10 @@ function pingResize() {
       closeAllDropdowns();
 
       //document.querySelector('header>nav').style.display = 'flex';
-      document.querySelector('header>nav').style.transition = 'width 0.3s, opacity 0.3s';
-      document.querySelector('header>nav').style.right = 'unset';
+      document.querySelector('header>nav').style.transition = 'width 0.3s ease, transform 0.3s ease';
+      document.querySelector('header>nav').style.transform = 'translateX(0)';
       document.querySelector('header>nav').style.opacity = '1';
-      document.querySelector('header>nav').style.transition = 'right 0.3s ease, width 0.3s, opacity 0.3s';
+      document.querySelector('header>nav').style.transition = 'width 0.3s ease, opacity 0.3s ease, transform 0.3s ease';
 
       document.querySelector('header>button').setAttribute('aria-expanded', 'true');
       middleLine.style.display = 'unset';

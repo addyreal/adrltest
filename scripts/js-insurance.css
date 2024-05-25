@@ -1,0 +1,14 @@
+nav ul li:focus-within ul {
+    display: block;
+}
+@media (max-width:1050px) {
+    header:focus-within nav {
+        display: flex;
+    }
+}
+
+#filler-item div:nth-child(1),
+#filler-item div:nth-child(2) {
+    opacity: 1;
+    transform: translateX(0);
+}

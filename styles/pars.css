@@ -1,0 +1,94 @@
+.content ul {
+    list-style: unset;
+    padding-left: 25px;
+}
+.content h2 {
+    margin: 25px 0 15px 0;
+}
+.content h3 {
+    margin: 10px 0 8px 0;
+}
+.content p {
+    line-height: 1.4;
+}
+.centered {
+    text-align: center;
+}
+.linkanch {
+    color: blue;
+    text-decoration: underline;
+}
+
+#info h3 {
+    font-size: 1rem;
+}
+#info p {
+    margin: 0.75rem 0;
+}
+#info a {
+    text-decoration: underline;
+    color: blue;
+}
+#info li {
+    line-height: 1.4;
+}
+#cosiprinest {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+#cosiprinest p,
+#info #abov {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+@media (max-width: 1000px) {
+    #cosiprinest {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 550px) {
+    #cosiprinest {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+#event-grid {
+    display: grid;
+    gap: 30px calc(20% - 70px);
+    grid-template-columns: repeat(2, 1fr);
+}
+    #event-grid h2 {
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #event-grid h3,
+    #event-grid p {
+        margin: 0.9em 0;
+    }
+    #event-grid h3 {
+        margin-bottom: 0.5em;
+    }
+    #event-grid p {
+        line-height: unset;
+        margin-top: 0.5em;
+    }
+    #event-grid hr {
+        background-color: gray;
+        height: 1px;
+    }
+@media (max-width:600px) {
+    #event-grid {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+#extrac-logo {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}

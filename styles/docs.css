@@ -1,0 +1,110 @@
+.content-wrap {
+    background-color: rgb(240, 240, 240);
+}
+    .content {
+        max-width: 1450px;
+    }
+        #docs-grid {
+            margin-top: 50px;
+            display: grid;
+            gap: 25px;
+            grid-template-columns: repeat(6, 1fr);
+        }
+            #docs-grid div {
+                position: relative;
+            }
+                #docs-grid div h2 {
+                    background-color: rgba(1, 65, 111, 0.95);
+                    color: white;
+                    font-size: 1.17rem;
+                    text-align: center;
+                    width: 100%;
+                    margin: 0 auto;
+                    padding: 15px 0;
+                    box-sizing: border-box;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                #docs-grid div p {
+                    margin: 0;
+                    padding: 7px;
+                    position: absolute;
+                    bottom: 5%;
+                    left: 5%;
+                    background-color: white;
+                    border: 2px solid rgb(255, 33, 33);
+                }
+                #docs-grid div img {
+                    max-width: 100%;
+                    display: block;
+                }
+                #docs-grid div a {
+                    background-color: rgba(255, 220, 46, 0.75);
+                    color: blue;
+                    font-size: 1rem;
+                    text-decoration: underline;
+                    display: flex;
+                    padding: 8px;
+                    box-sizing: border-box;
+                    position: absolute;
+                    bottom: 5%;
+                    right: 5%;
+                }
+                    #docs-grid div a img {
+                        height: 1rem;
+                        display: block;
+                        margin-left: 5px;
+                        align-self: center;
+                    }
+                #docs-grid div div {
+                    background-color: rgb(255, 255, 255);
+                    height: 35px;
+                    width: 35px;
+                    position: absolute;
+                    bottom: 5%;
+                    left: 5%;
+                    padding: 5px 4px 4px 5px;
+                    box-sizing: border-box;
+                    border: 2px solid rgba(255, 220, 46, 0.75);
+                    border-radius: 50%;
+                }
+                #docs-grid div div img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+                #docs-grid>div>img {
+                    width: 100%;
+                    aspect-ratio: 0.708;
+                }
+@media (max-width:1200px) {
+    #docs-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+}
+@media (max-width:800px) {
+    #docs-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+}
+@media (max-width:650px) {
+    #docs-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 20px;
+    }
+}
+@media (max-width:350px) {
+    #docs-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+    #docs-grid div img {
+        width: 100%;
+    }
+    #docs-grid div a img {
+        width: unset;
+    }
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="language" content="cs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com/ https://fonts.gstatic.com;">
+    <meta name="robots" content="index, follow">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png">
+    <meta name="theme-color" content="#01416F">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <script src="scripts/body.js" defer></script>
+    <script src="scripts/filler.js" defer></script>
+    <script src="scripts/calendar.js" defer></script>
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/misc.css">
+    <link rel="stylesheet" href="scripts/js-insurance.css" id="js-insurance">
+    <title>MŠ Kostomlaty nad Labem</title>
+    <meta name="description" content="Lidská osobnost, ne výchovná metoda, musí být brána v úvahu. Mateřská škola Kostomlaty nad Labem, příspěvková organizace.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <a href="#main" id="skip" aria-label="Přeskočit k hlavnímu obsahu">Přeskočit k hlavnímu obsahu</a>
+
+    <header role="banner">
+        <a href="index.html" aria-label="Domovská stránka" rel="home">
+          <img src="images/logo.webp" alt="Logo školy">
+          <div><h1 class="manrope">Mateřská škola</h1><h2 class="manrope">Kostomlaty nad Labem</h2></div>
+        </a>
+        <button type="button" aria-label="Tlačítko mobilní navigace" aria-haspopup="true" aria-controls="navigation"><span></span><span></span><span></span></button>
+        <nav role="navigation" id="navigation">
+            <ul role="menubar">
+                <li role="menuitem">
+                    <button type="button" aria-haspopup="true" aria-controls="skola-menu">Škola</button><hr>
+                    <ul id="skola-menu">
+                        <li role="menuitem"><a href="oskole.html">O škole</a></li>
+                        <li role="menuitem"><a href="tridy.html">Třídy</a></li>
+                        <li role="menuitem"><a href="kontakty.html">Kontakty</a></li>
+                        <li role="menuitem"><a href="projekty.html">Projekty</a></li>
+                    </ul>
+                </li>
+                <li role="menuitem">
+                    <button type="button" aria-haspopup="true" aria-controls="prorodice-menu">Pro rodiče</button><hr>
+                    <ul id="prorodice-menu">
+                        <li role="menuitem"><a href="informace.html">Informace</a></li>
+                        <li role="menuitem"><a href="akce.html">Akce</a></li>
+                        <li role="menuitem"><a href="platby.html">Platby</a></li>
+                        <li role="menuitem"><a href="krouzky.html">Kroužky</a></li>
+                    </ul>
+                </li>
+                <li role="menuitem">
+                    <button type="button" aria-haspopup="true" aria-controls="fotogalerie-menu">Fotogalerie</button><hr>
+                    <ul id="fotogalerie-menu">
+                        <li role="menuitem"><a href="cervena.html">Červená</a></li>
+                        <li role="menuitem"><a href="zelena.html">Zelená</a></li>
+                        <li role="menuitem"><a href="zluta.html">Žlutá</a></li>
+                        <li role="menuitem"><a href="modra.html">Modrá</a></li>
+                        <li role="menuitem"><a href="archiv.html">Archiv</a></li>
+                    </ul>
+                </li>
+                <li role="menuitem"><a href="dokumenty.html">Dokumenty</a><hr></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="slideshow" class="js-enable">
+    <script src="scripts/js-insurance.js"></script>
+        <div id="slideshow-button-left">
+            <a href="#" aria-controls="slideshow" aria-label="Předchozí slide" role="button">
+                <div class="slideshow-button">
+                    <img src="images/leftbtnimg.png" alt="Šipka doleva">
+                </div>
+            </a>
+        </div>
+        <img src="images/slideshowimg1.webp" class="slide active" alt="Budova mateřské školy">
+        <img src="images/slideshowimg2.webp" class="slide" alt="Zahrada mateřské školy s hřištěm">
+        <img src="images/slideshowimg3.webp" class="slide" alt="Mávající děti na kopečku na zahradě mateřské školy">
+        <img src="images/slideshowimg4.webp" class="slide" alt="Děti na výpravě polní cestičkou">
+        <img src="images/slideshowimg5.webp" class="slide" alt="Děti na výpravě lesem">
+        <img src="images/slideshowimg6.webp" class="slide" alt="Děti s čepicemi před budovou">
+        <img src="images/slideshowimg7.webp" class="slide" alt="Děti ve školce na koberci s pomůckami">
+        <img src="images/slideshowimg8.webp" class="slide" alt="Děti ve školce na koberci hrající si s pomůckami">
+        <img src="images/slideshowimg9.webp" class="slide" alt="Všechny třídy ve školce na divadelním představení">
+        <img src="images/slideshowimg10.webp" class="slide" alt="Děti ve školce s Mikulášem, anděli a čerty">
+        <img src="images/slideshowimg11.webp" class="slide" alt="Děti ve školce s Halloweenskými kostými">
+        <div id="slideshow-button-right">
+            <a href="#" aria-controls="slideshow" aria-label="Další slide" role="button">
+                <div class="slideshow-button">
+                    <img src="images/rightbtnimg.png" alt="Šipka doprava">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <main role="main" id="main">
+        <div id="news-wrap">
+            <h1>Aktuality</h1>
+            <div id="news">
+                <div class="news-item news-item-not-cal">
+                    <h2>Seznam přijatých dětí</h2>
+                    <p class="news-text">Vážení rodiče,<br>
+                        právě zveřejňujeme seznam přijatých a nepřijatých dětí do naší MŠ.<br><br>
+                        Pod následujícími odkazy najdete již zmíněné seznamy: <a href="https://drive.google.com/file/d/1m6PSWnIrZFripiI5rfqYabGcQr7ct5QT/view?usp=sharing">Přijaté děti</a>, 
+                        <a href="https://drive.google.com/file/d/1fHfu_6RC4peYtxxQfFxBYU1E-1ejehrJ/view?usp=sharing">Nepřijaté děti</a></p>
+                    <p class="news-date">24.5.2024</p>
+                </div>
+                <div class="news-item news-item-not-cal">
+                    <h2>Rozloučení s předškoláky</h2>
+                    <p class="news-text">Vážení rodiče předškoláků,<br><br>
+                        srdečně Vás zveme na společné rozloučení s předškoláky na obecním úřadě,
+                        které se uskuteční <span class="underline">25.6.2024 v 10:00 hod</span>. Prosíme o slavnostní oblečení pro děti.</p>
+                    <p class="news-date">23.5.2024</p>
+                </div>
+                <div class="news-item news-item-not-cal">
+                    <h2>Zápis do MŠ 2024/2025</h2>
+                    <p class="news-text">Vážení rodiče,<br>
+                        právě otevíráme zápis do naší mateřské školy.<br><br>
+                        V sekci "<a href="dokumenty.html">Dokumenty</a>" naleznete potřebné informace.</p>
+                    <p class="news-date">11.4.2024</p>
+                </div>
+                <div class="news-item news-item-not-cal">
+                    <h2>Společné focení</h2>
+                    <p class="news-text">Vážení rodiče,<br>
+                    ve středu 15.5. proběhne fotografování tříd.<br><br>
+                    Prosíme rodiče, aby přivedli děti ve vhodném oblečení. Oblečení na převléknutí nechte v šatně.</p>
+                    <p class="news-date">29.4.2024</p>
+                </div>
+                <div class="news-item js-enable item-calendar" aria-label="Kalendář s akcemi, naleznete pod 'Pro rodiče -> Akce'">
+                <script src="scripts/js-insurance.js"></script>
+                    <div id="calendar-container">
+                        <div id="calendar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside>
+        <div id="filler-wrap" class="filler-right">
+            <div id="filler-item">
+                <div id="filler-img"><img src="images/filler1.webp" alt="Montessori pomůcka - Růžová věž"></div>
+                <div id="filler-text">
+                    <h2>Ticho, klid, mír</h2>
+                    <p>Děti potřebují růst v prostředí, kde vládne pohoda a kde komunikují s ostatními s respektem, v klidu a míru. Tato prostředí pak formují základy, které děti přenášejí do celého svého života.</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <aside>
+        <div id="partners-wrap">
+            <h2>Partneři školy</h2>
+            <hr>
+            <div id="partners">
+                <div><img src="images/partner1.webp" alt="Logo partnera Rodiče vítáni"></div>
+                <div><img src="images/partner2.webp" alt="Logo partnera Veselá věda"></div>
+                <div><img src="images/partner3.webp" alt="Logo partnera Šablony OPJAK"></div>
+                <div><img src="images/partner4.webp" alt="Logo partnera Začít spolu"></div>
+                <div><img src="images/partner5.webp" alt="Logo partnera Digitalizujeme školu"></div>
+            </div>
+        </div>
+    </aside>
+
+    <button id="scrollButton" type="button"><img src="images/arrowup.png" alt="Šipka nahoru" aria-label="Tlačítko zpět nahoru"></button>
+
+    <footer role="contentinfo">
+        <div id="footer-left">
+            <div id="footer-logo">
+                <img src="images/logo.webp" alt="Logo školy">
+                <div>
+                    <h2>Mateřská škola</h2>
+                    <h3>Kostomlaty nad Labem</h3>
+                </div>
+            </div>
+            <h2>O nás</h2>
+            <p>Jsme mateřská škola implementující metody a formy práce vycházející z pedagogiky Marie Montessori a programu Začít spolu. Podporujeme v dětech individiualitu, učíme je strategií kooperace s druhými.</p>
+            <p><b>Školní 370 Kostomlaty nad Labem 28921</b></p>
+            <p>© 2024 Mateřská škola Kostomlaty nad Labem</p>
+        </div>
+        <div id="footer-right">
+            <div id="footer-grid">
+                <div>
+                    <h2>Kontakt školy</h2>
+                    <p>Ředitelka: Bc.Eva Sochová</p>
+                    <p><a href="mailto:ms.kostomlatynl@gmail.com">ms.kostomlatynl@&ZeroWidthSpace;gmail.com</a></p>
+                    <p><a href="tel:+420721437118">+420 721 437 118</a></p>
+                    <p>Datová schránka: fggktbc</p>
+                </div>
+                <div>
+                    <h2>Kontakt tříd</h2>
+                    <p>Červená: <a href="tel:+420604140965">+420 604 140 965</a></p>
+                    <p>Zelená: <a href="tel:+420605555171">+420 605 555 171</a></p>
+                    <p>Žlutá: <a href="tel:+420604140046">+420 604 140 046</a></p>
+                    <p>Modrá: <a href="tel:+420736529995">+420 736 529 995</a></p>
+                </div>
+                <div>
+                    <h2>Jídelna</h2>
+                    <p>Vedoucí: Martina Skořepová</p>
+                    <p><a href="tel:+420736754898">+420 736 754 898</a></p>
+                    <p><a href="https://www.jidelna.cz/jidelni-listek/?jidelna=1318">www.jidelna.cz</a></p>
+                </div>
+                <div>
+                    <h2>Web</h2>
+                    <p><a href="prohlaseni.html">Prohlášení o přístupnosti</a></p>
+                    <p><a href="newsletter.html">Odběr novinek</a></p>
+                    <p><a href="mapa.html">Mapa webu</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>

@@ -1,0 +1,310 @@
+.content-wrap a {
+    text-decoration: underline;
+    color: blue;
+}
+.content h2 {
+    margin: 25px 0 15px 0;
+}
+.content h3 {
+    margin: 10px 0 8px 0;
+}
+.content p {
+    line-height: 1.4;
+}
+
+#oskole p {
+    text-align: justify;
+}
+
+#classes {
+    margin-top: 50px;
+}
+#emp-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+    #emp-grid hr {
+        width: 80%;
+        margin: 0.3em 0;
+    }
+    #emp-grid h2 {
+        margin-bottom: 10px;
+    }
+    #emp-grid p {
+        margin: 0;
+    }
+#classes section {
+    min-height: 150px;
+    margin-bottom: 40px;
+}
+#classes section:nth-child(4) {
+    margin-bottom: 0;
+}
+    #classes section h2 {
+        margin-bottom: 0;
+    }
+    #classes section>hr {
+        margin: 7px 0 15px 0;
+        height: 4px;
+        border: none;
+        min-width: 100px;
+    }
+    #classes section:nth-child(1)>hr {
+        background-color: rgb(183, 32, 32);
+        width: 30%;
+    }
+    #classes section:nth-child(2)>hr {
+        background-color: rgb(18, 108, 18);
+        width: 45%;
+    }
+    #classes section:nth-child(3)>hr {
+        background-color: rgb(255, 220, 46);
+        width: 60%;
+    }
+    #classes section:nth-child(4)>hr {
+        background-color: rgb(30, 56, 151);
+        width: 75%;
+    }
+.underheading>div {
+    position: relative;
+}
+    .floating {
+        display: flex;
+        float: right;
+        padding-left: 50px;
+    }
+        .floating hr {
+            width: 90%;
+            margin: 0.35em auto;
+        }
+        .floating img {
+            margin: 0 20px;
+            height: 90px;
+            align-self: center;
+        }
+        .floating p {
+            margin: 0;
+        }
+@media (max-width: 900px) {
+    #emp-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #emp-grid hr {
+        min-width: 170px;
+        max-width: 230px;
+    }
+}
+@media (max-width:650px) {
+    .underheading>div p {
+        text-align: justify;
+    }
+    .floating {
+        float: none;
+        margin-bottom: 15px;
+        position: relative;
+        padding: 0;
+        right: 5px;
+        justify-content: space-around;
+    }
+    .floating img {
+        margin-right: 0;
+    }
+    .floating div {
+        width: auto;
+    }
+}
+@media (max-width: 500px) {
+    #emp-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #emp-grid hr {
+        width: 65%;
+    }
+}
+@media (max-width: 420px) {
+    .floating {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media (max-width: 370px) {
+    .floating img {
+        display: none;
+    }
+}
+
+#contacts-one {
+    display: flex;
+    justify-content: space-between;
+}
+    #contacts-one a {
+        color: inherit;
+    }
+    #contacts-one .contacts-first {
+        margin-top: 0;
+    }
+    #contacts-one .contacts-last,
+    #contacts-two .contacts-last {
+        margin-bottom: 0;
+    }
+    #contacts-one div {
+        width: calc(40% - 20px);
+    }
+    #contacts-one iframe {
+        width: 60%;
+        height: auto;
+        margin: 0;
+        border: none;
+    }
+#contacts-two {
+    display: flex;
+}
+    #contacts-two a {
+        color: inherit;
+    }
+    #contacts-two div:nth-child(1) {
+        width: 40%;
+    }
+    #contacts-two div:nth-child(2) {
+        width: 60%;
+    }
+    #contacts-one p,
+    #contacts-two p {
+        margin: 0.7em 0;
+    }
+@media (max-width: 950px) {
+    #contacts-one {
+        flex-direction: column;
+    }
+    #contacts-one div {
+        width: 100%;
+    }
+    #contacts-one iframe {
+        width: 100%;
+        height: 250px;
+        margin: 10px 0;
+    }
+}
+@media (max-width: 600px) {
+    #contacts-two {
+        flex-direction: column;
+    }
+    #contacts-two div:nth-child(1) {
+        width: 100%;
+    }
+    #contacts-two div:nth-child(2) {
+        width: 100%;
+    }
+}
+
+#projects h3 {
+    font-size: 1rem;
+}
+#projects p {
+    margin: 0.75em 0;
+}
+#frantisek .floating-image {
+    margin-left: 30px;
+}
+#frantisek p {
+    text-align: justify;
+}
+#id1 {
+    width: 225px;
+    transition: width 0.3s, height 0.3s, margin 0.3s;
+}
+.floating-image {
+    float: right;
+    width: 200px;
+    margin: 5px 0 15px 15px;
+    position: relative;
+}
+    .floating-image a {
+        background-color: rgba(1, 65, 111, 0.4);
+        color: white;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        padding: 7% 0;
+        font-size: 1rem;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        position: absolute;
+        bottom: 0;
+        transition: background-color 0.3s;
+    }
+    .floating-image a:hover,
+    .floating-image a:focus-visible {
+        background-color: rgba(1, 65, 111, 0.9);
+        text-decoration: underline;
+    }
+    .floating-image img {
+        display: block;
+        max-width: 100%;
+    }
+#pj-grid {
+    display: grid;
+    gap: 20px 50px;
+    grid-template-columns: repeat(2, 1fr);
+}
+    #sokol-image {
+        margin-bottom: 10px;
+    }
+    #givt-image {
+        width: 125px;
+    }
+#fondy p {
+    margin: 0 0 0.4em 0;
+}
+#floating-pub {
+    height: 200px;
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+    #floating-pub img {
+        max-height: 100%;
+        border: 2px solid black;
+        border-radius: 2%;
+        box-sizing: border-box;
+        width: 49%;
+    }
+@media (max-width: 800px) {
+    #pj-grid .floating-image {
+        width: 50%;
+    }
+}
+@media (max-width: 700px) {
+    #pj-big-image {
+        width: 40%;
+    }
+    #pj-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #projects .floating-image {
+        width: 150px;
+    }
+}
+@media (max-width:600px) {
+    #floating-pub {
+        float: unset;
+        width: 100%;
+        margin: 0 auto 10px auto;
+        height: auto;
+    }
+}
+@media (max-width: 300px) {
+    #pj-big-image {
+        width: 100%;
+        float: unset;
+        margin: 0;
+    }
+    #projects .floating-image {
+        width: 100% ;
+        float: unset;
+        margin: 0;
+    }
+}
